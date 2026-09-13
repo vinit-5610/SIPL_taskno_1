@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinit Raj — Portfolio</title>
+    <meta
+      name="description"
+      content="Vinit Raj — Computer Science student and web developer building clean, modern, user-focused digital experiences."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="mark" data-bind="initials">VR</span>
+          <span data-bind="name">Vinit Raj</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-secondary btn-sm desktop-only" href="#contact"
+            >Let's talk</a
+          >
+          <button
+            class="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+   
+    <div class="menu-overlay"></div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+      <div class="nav-logo">
+        <span class="mark" data-bind="initials">VR</span>
+        <span data-bind="name">Vinit Raj</span>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="btn btn-primary" href="#contact">Let's talk</a>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-cursor-glow" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow" data-reveal>Available for opportunities</p>
+
+            <h1 class="hero-title" data-reveal>
+              Hi, I'm <span data-bind="name">Vinit Raj</span>.
+            </h1>
+
+            <p class="hero-role-line" data-reveal>
+              <span class="role-prefix">I'm a</span>
+              <span id="role-text">Computer Science Student</span
+              ><span class="hero-cursor" aria-hidden="true"></span>
+            </p>
+
+            <p class="hero-desc" data-reveal data-bind="heroDescription">
+              I design and build interfaces with an eye for detail.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#resume" class="btn btn-secondary">Download Resume</a>
+            </div>
+
+            <div class="hero-socials" data-reveal>
+              <a
+                class="btn-icon"
+                data-bind-href="socials.github"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+                  />
+                </svg>
+              </a>
+              <a
+                class="btn-icon"
+                data-bind-href="socials.linkedin"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4 0 4.74 2.6 4.74 6V21H18.3v-5.7c0-1.36-.02-3.1-1.9-3.1s-2.18 1.48-2.18 3v5.8H10z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="btn-icon"
+                data-bind-href="socials.instagram"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  ></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="media-frame">
+              <img
+                data-bind-src="profileImage"
+                src="assets/profile.jpeg"
+                alt="Portrait of Vinit Raj"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder" aria-hidden="true">VR</div>
+            </div>
+            <div class="frame-tag">
+              <strong data-bind="roleStatic"
+                >Computer Science Student / Web Developer</strong
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="line"></span>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about-grid">
+          <div class="about-media" data-reveal>
+            <div class="media-frame">
+              <img
+                data-bind-src="aboutImage"
+                src="assets/about.jpeg"
+                alt="Vinit Raj working at a desk"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="img-placeholder" aria-hidden="true">VR</div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p class="eyebrow" data-reveal>About me</p>
+            <h2 class="section-heading" data-reveal>
+              A closer look at how I work and what I care about
+            </h2>
+            <p class="about-bio" data-reveal data-bind="bio">Bio goes here.</p>
+
+            <div class="about-stats" data-stats data-reveal-group>
+             
+            </div>
+
+            <div class="about-cta" data-reveal>
+              <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">My Skills</p>
+            <h2 class="section-heading">Technologies and tools I work with</h2>
+            <p class="section-sub">
+              A snapshot of what I use to plan, build and ship projects.
+            </p>
+          </div>
+
+          <div class="skills-grid" data-skills-grid>
+           
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Featured Projects</p>
+            <h2 class="section-heading">A few things I've built recently</h2>
+            <p class="section-sub">
+              A mix of web projects, JavaScript experiments and a WordPress
+              build.
+            </p>
+          </div>
+
+          
+
+          <div class="projects-grid" data-projects-grid>
+         
+          </div>
+          <p class="projects-empty" data-projects-empty>
+            No projects in this category yet — check back soon.
+          </p>
+        </div>
+      </section>
+
+      <section id="resume">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Resume</p>
+            <h2 class="section-heading">Want the full picture?</h2>
+          </div>
+
+          <div class="resume-card" data-reveal>
+            <div class="resume-info">
+              <div class="resume-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path
+                    d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"
+                  />
+                  <path d="M14 3v5h5" />
+                  <path d="M9 13h6M9 17h6M9 9h2" />
+                </svg>
+              </div>
+              <div class="resume-text">
+                <h3>Download my resume</h3>
+                <p>
+                  A complete summary of my education, skills and project
+                  experience, in PDF format.
+                </p>
+              </div>
+            </div>
+            <div class="resume-actions">
+              <a
+                class="btn btn-primary"
+                data-resume-link
+                download
+                href="assets/resume.pdf"
+                >Download Resume</a
+              >
+              <a
+                class="btn btn-secondary"
+                data-resume-link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="assets/resume.pdf"
+                >View Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <p class="eyebrow" data-reveal>Contact</p>
+            <h2 class="section-heading" data-reveal>Let's Work Together</h2>
+            <p class="section-sub" data-reveal>
+              Have a project in mind or just want to say hi? My inbox is always
+              open.
+            </p>
+          <div class="contact-info-list" data-reveal-group>
+          
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  ></circle>
+                </svg>
+              </div>
+
+              <div>
+                <div class="contact-info-label">Instagram</div>
+
+                <a
+                  class="contact-info-value contact-social-link"
+                  data-bind-href="socials.instagram"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @vinit_5610
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path
+                    d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2 3.76-2 4 0 4.74 2.6 4.74 6V21H18.3v-5.7c0-1.36-.02-3.1-1.9-3.1s-2.18 1.48-2.18 3v5.8H10z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div>
+                <div class="contact-info-label">LinkedIn</div>
+
+                <a
+                  class="contact-info-value contact-social-link"
+                  data-bind-href="socials.linkedin"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vinit Raj
+                </a>
+              </div>
+            </div>
+
+            
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path d="M4 6h16v12H4z" />
+                    <path d="M4 6l8 7 8-7" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Email</div>
+                  <div class="contact-info-value" data-bind="email">
+                    vinit.raj@example.com
+                  </div>
+                  <button class="copy-email-btn" data-copy-email type="button">
+                    Copy email
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.2a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.6 2Z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Phone</div>
+                  <div class="contact-info-value" data-bind="phone">
+                    +91 98765 43210
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-info-label">Location</div>
+                  <div class="contact-info-value" data-bind="location">
+                    New Delhi, India
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" data-contact-form novalidate data-reveal>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Your name"
+                />
+                <span class="field-error" data-field-error></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                />
+                <span class="field-error" data-field-error></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What's this about?"
+              />
+              <span class="field-error" data-field-error></span>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me a bit about your project or question..."
+              ></textarea>
+              <span class="field-error" data-field-error></span>
+            </div>
+
+            <div class="form-status" data-form-status role="status"></div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="mark" data-bind="initials">VR</span>
+              <span data-bind="name">Vinit Raj</span>
+            </a>
+            <p data-bind="tagline">
+              Building clean, modern and user-focused digital experiences.
+            </p>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h4>Navigate</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a
+                    data-bind-href="socials.github"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-bind-href="socials.linkedin"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a data-bind-href="socials.email" href="#">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span
+            >&copy; <span data-current-year>2026</span>
+            <span data-bind="name">Vinit Raj</span>. All rights reserved.</span
+          >
+          <span>Built with HTML, CSS &amp; JavaScript.</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
