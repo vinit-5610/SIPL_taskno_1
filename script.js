@@ -15,7 +15,7 @@ const CONFIG = {
   phone: "+91 6202894625",
   location: "Bihar, India",
 
-  resumeUrl: "assets/resume.pdf",
+  resumeUrl: "https://drive.google.com/file/d/1zYqbTnOOS6g2RMAxnJ4IC591N1JesC5X/view?usp=drive_link",
   profileImage: "assets/profile.jpeg",
   aboutImage: "assets/about.jpeg",
 
